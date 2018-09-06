@@ -15,6 +15,7 @@
   }
   #logo {
     grid-area: logo;
+    max-width: 120px;
   }
 </style>
 
