@@ -1,0 +1,26 @@
+#app {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template:  
+  "logo"
+  "nav"
+  "side"
+  "content";
+
+  @include respond (phablet) {
+    grid-template:  
+    "logo nav"
+    "side side"
+    "content content"
+    "content content";
+  }
+
+  @include respond (desktop) {
+    grid-template:  
+    "logo nav nav nav"
+    "side content content content"
+    "side content content content"
+    "side content content content";
+  }
+}
+// Tjena mannen

@@ -1,0 +1,9 @@
+@mixin respond ($size) {
+  @if map-has-key($mediaquerys, $size) {
+    @media #{map-get($mediaquerys, $size)} {
+      @content;
+    }
+  } @else {
+    @warn 'Something went wrong with @include respond()';
+  }
+}
