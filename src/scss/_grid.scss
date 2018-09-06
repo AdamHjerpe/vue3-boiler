@@ -1,26 +1,17 @@
 #app {
+  min-height: 100vh;
   display: grid;
   grid-gap: 1rem;
-  grid-template:  
-  "logo"
-  "nav"
-  "side"
-  "content";
-
+  grid-template-areas:
+    "header header header"
+    "navbar content content" 
+    "footer footer footer";
+    grid-template-rows: [row1-start] [row1-end row2-start] 1fr [row2-end];
+    grid-template-columns: 25rem auto auto;   
+    justify-content: stretch;	
+    align-content: stretch;	
   @include respond (phablet) {
-    grid-template:  
-    "logo nav"
-    "side side"
-    "content content"
-    "content content";
   }
-
   @include respond (desktop) {
-    grid-template:  
-    "logo nav nav nav"
-    "side content content content"
-    "side content content content"
-    "side content content content";
   }
 }
-// Tjena mannen

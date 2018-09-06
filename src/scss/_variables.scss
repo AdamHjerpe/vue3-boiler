@@ -1,5 +1,8 @@
 $font-size: 1em;
-
+$font-col: #333;
+$head-col: $font-col;
+$bg-col: #fff;
+$l-height: 1.5; // Default line height
 $mediaquerys: (
   phablet: '(min-width: 640px)',
   desktop: '(min-width: 1024px)',

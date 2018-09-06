@@ -7,8 +7,9 @@
 
 <style scoped lang="scss">
   #nav {
-    grid-area: nav;
+    grid-area: navbar;
     padding: 3em 0;
+    background: red;
     a {
       padding: 0 1em 0 0;
       font-weight: bold;

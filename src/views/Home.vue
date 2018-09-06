@@ -6,7 +6,7 @@
 
 <style scoped lang="scss">
   .home {
-    grid-area: content;
+    grid-area: content
   }
 </style>
 

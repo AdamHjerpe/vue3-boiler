@@ -14,7 +14,6 @@
     color: #2c3e50;
   }
   #logo {
-    grid-area: logo;
     max-width: 120px;
   }
 </style>
