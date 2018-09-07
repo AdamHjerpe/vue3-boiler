@@ -7,5 +7,7 @@
 </template>
 
 <style scoped lang="scss">
-
+  .about{
+    grid-area: content;
+  }
 </style>

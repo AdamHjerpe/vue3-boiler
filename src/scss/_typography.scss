@@ -122,13 +122,12 @@ li {
 
 em {
   font-style: italic;
-  font {
-    family: $p-font;}
+  font-family: $p-font;
 }
 strong {
-  font {
-    family: $p-font;
-    weight: 700;}}
+  font-family: $p-font;
+  font-weight: 700;
+  }
 
 ///////////////////
 // Quote styling //
@@ -149,17 +148,17 @@ blockquote {
   quotes:'\201C''\201D''\2018''\2019';
   &:lang(sv) { quotes: '\201D' '\201D' '\2019' '\2019'; }
   &:lang(da) { quotes: '\00BB' '\00AB' '\203A' '\2039'; }
-  &:before, &:after {
-    // color: darken($bg-col, 15%);
-    // font-size:4em;
-    // line-height:.1em;
-    // margin-right:.25em;
-    // vertical-align:-.4em;
-    }
-    &:before {
-      content: open-quote;}
-    &:after {
-      content: close-quote;}
+  // &:before, &:after {
+  //   color: darken($bg-col, 15%);
+  //   font-size:4em;
+  //   line-height:.1em;
+  //   margin-right:.25em;
+  //   vertical-align:-.4em;
+  // }
+  &:before {
+    content: open-quote;}
+  &:after {
+    content: close-quote;}
   p {
     display:inline;}}
 
