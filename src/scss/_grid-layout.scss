@@ -1,0 +1,22 @@
+#app {
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: stretch;	
+  align-content: stretch;	
+  grid-template: 
+    "header" 
+    "navbar"
+    "content"
+    "footer";
+  @include respond (phablet) {
+  }
+  @include respond (desktop) {
+    grid-template-areas:
+      "header header header"
+      "navbar content content" 
+      "footer footer footer";
+    grid-template-rows: [row1-start] 10em [row1-end row2-start] 1fr [row2-end];
+    grid-template-columns: 15rem auto auto;   
+  }
+}
